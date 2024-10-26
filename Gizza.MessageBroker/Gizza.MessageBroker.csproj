@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Gizza.MessageBroker</PackageId>
+		<Authors>Burak Öner</Authors>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0</FileVersion>
+		<PackageVersion>1.0.0</PackageVersion>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<Description>Blazing fast message broker tools using smart implementations.</Description>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageTags>Gizza;Message;Broker;Message;Messaging;Broker;RabbitMq;Kafka;NATS;Redis;Publisher;Consumer;Stream;Streamer;Receiver;RPC;Server;Client</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<NeutralLanguage>en</NeutralLanguage>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReleaseNotes>
+			Version 1.0.0 - 26 Oct 2024
+		</PackageReleaseNotes>
+		<PackageIcon>Gizza.MessageBroker.png</PackageIcon>
+		<PackageIconUrl />
+		<PackageProjectUrl>https://github.com/burakoner/Gizza.MessageBroker</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/burakoner/Gizza.MessageBroker</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NATS.Client" Version="1.1.6" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<None Include="Gizza.MessageBroker.png" Pack="True" PackagePath="" />
+	</ItemGroup>
+
+</Project>
